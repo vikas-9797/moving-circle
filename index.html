@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #vikasbox{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .box{
+            /* transform: translate(200px,200px); */
+            /* transform:  translate(200px,200px) scale(1.5); */
+
+            /* transform: rotate(290deg); */
+            /* margin-left: 200px; */
+           
+            background-color: chartreuse;
+            /* transition: all 1s linear ; */
+            transition-property: trans;
+            transition-timing-function: ease-in;
+            transition-duration: 5s;
+            transition-delay: 1s;
+
+        }
+        .flex{
+            display: flex;
+        }
+        .box:hover{
+            background-color: purple;
+            transform: scale(1.5);
+        }
+        .spinner{
+            border: 8px solid black;
+            border-top: 8px solid red;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            /* transition: all 1s linear; */
+            animation: 1s linear 1s infinite spinner;
+        }
+        .spinner:hover{
+            transform: rotate(360deg);
+        }
+        @keyframes spinner {
+            0%{
+                transform: rotate(0deg);
+                background-color: aqua;
+                color: chocolate;
+            }
+            50%{
+                transform: rotate(180deg);
+                background-color: green;
+                color: crimson;
+            }
+            100%{
+                transform: rotate(360deg);
+                background-color: yellow;
+                color: black;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="flex">
+    <div class="box">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEUAAAD///9QUFBVVVX6+vo2Njbz8/MPDw/b29u0tLR5eXkYGBji4uLOzs6CgoKPj487OzteXl5ZWVkwMDC7u7tjY2NFRUWfn5+srKwnJyfT09Nvb2/KysqLi4vu7u7h4eGYmJgoKCjBhM73AAAD5ElEQVR4nO2c3VrbMBBER7FxQuzEDjS0QCnl/V+y5IcmLSm2ZakaLXOuuAB5z6cQr9fahTtRrtptVyNv6m7brsozK/z+qVmmDi4gy+adYbVOHVRg1tWfhovUAUVgcW54nTqaKFyfDG0KHhVh9CN6YHEwrFLHEZFqb2jtW/Sc9c6wSR1FVJpXQ0s3+vcsHcrUMUSmxCp1CJFZoU0dQmRabFKHEJkNutQhRKZD7s+DfVj3E0IIISZSF7N8KHxu7DcuJwoPwyJ10KOYyVCG9MhQhvzIUIb8yFCG/MhQhvzIUIb8yFCG/MhQhvzIUIb8yFCG/MhQhvzIUIZTaQOudZnUhugWAVe7RGrDOfAz4HIXIDDE3XPABd/BYAh8Dbji33AYYlb1/6onJIZvTY8RoDHENtI28hhi/iXguieIDIHHsv8PRkNliPkq4NJHuAyBdfBtZDPEbegsjs4QCJyMExoGTsYZDcNmcZyGmP0IdgVSQ+BbqCvQGmIbaBt5DTEPk4wTG75uY4jbP7Uh5t+nX4HbEFhO3kZ2Q9w/TLwCvSHwNO0KgQ3LkQwxxNWkLC6sYXV7NY6BcxumlFQDG3qsNoi75p/XNGI4IYvLxhA3nllcPoa+JdWcDLHxKalmZQh4lFQzM/TI4nIzxP3Ykmp2hvtpecYNcTsqGc/RcFxJNU9DdMOzuEwNR5RUszXEbOA25ms4NBnP2RDFkCwua8NBWVzmhnjs3cbcDYG+kmr+hn3JuAHDnmTcguHHJVUbhh+NH7NhaH0PX6z/H5r/LrV+PzSf01jPS80/W1h/PjT/jG+9TmO+1ma9XnplveZt/b2F+XdP5t8fWn8H7NUalZOh9bMYG+vnaayfibrzP9aus4njDO2fLx1PdmeER9Nr+GL9nPf0jktuQ/P9FkE6n4kNA3Wv8xqa710LNkWC1NB8D6n1PuCwE3kIDQNPVaIznJZmX4DN8Mn4XIza+myT6S2xFyAyrAOk2RfgMew/c+AHjWGcIVGOxvDG+ry2YGM+LsBgOPTMgR8EhjGHJrr0hpEHX7r0hpGHl7r0hvGRoQz5kaEM+ZGhDPmRoQz5kaEM+ZGhDPmRoQz5kaEM+ZGhDPmRoQz5kaEM+ZHh5zT8YLAWIYWHYV3M8qGoPQyFEEKIT4T1W2WNgfMOsqXDJnUIkdmgTR1CZFqsUocQmRXK1CFEpoRbpo4hKksH16QOIirNq6Fbp44iImu3M0w2gPw/UO0N3SJ1HNHY9VPvDN116kgisZ9JsTc0qngYunEwNPlBPbb8Hw1dZe0bdf3Wr/pm6Fxj6da/PLVzngydKx/abZf782LdbduH847/X2j/eOrmsZ4cAAAAAElFTkSuQmCC" alt="">
+
+
+    </div> -->
+<div id="vikasbox">
+    <div class="spinner">
+
+       
+    </div>
+    <div class="spinner">
+
+    </div>
+    <div class="spinner">
+
+    </div>
+</div>
+
+</div>
+</body>
+</html>
